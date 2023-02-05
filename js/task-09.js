@@ -5,9 +5,7 @@ function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
-console.log(getRandomHexColor());
-
 btnEl.addEventListener("click", () => {
   document.body.style.backgroundColor = getRandomHexColor();
-  textEl.textContent = getRandomHexColor();
+  textEl.textContent = document.body.style.backgroundColor;
 });

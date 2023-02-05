@@ -19,8 +19,8 @@ function createBoxes(amount) {
     boxEl.style.backgroundColor = getRandomHexColor();
 
     boxesArr.push(boxEl);
-    boxesEl.append(...boxesArr);
   }
+  boxesEl.append(...boxesArr);
 }
 
 createBtn.addEventListener("click", createBoxes);
